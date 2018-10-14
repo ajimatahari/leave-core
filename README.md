@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/cleaniquecoders/leave.svg?branch=master)](https://travis-ci.org/cleaniquecoders/leave) [![Latest Stable Version](https://poser.pugx.org/cleaniquecoders/leave/v/stable)](https://packagist.org/packages/cleaniquecoders/leave) [![Total Downloads](https://poser.pugx.org/cleaniquecoders/leave/downloads)](https://packagist.org/packages/cleaniquecoders/leave) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cleaniquecoders/leave/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/cleaniquecoders/leave/?branch=master) [![License](https://poser.pugx.org/cleaniquecoders/leave/license)](https://packagist.org/packages/cleaniquecoders/leave)
+[![Build Status](https://travis-ci.org/cleaniquecoders/leave-core.svg?branch=master)](https://travis-ci.org/cleaniquecoders/leave-core) [![Latest Stable Version](https://poser.pugx.org/cleaniquecoders/leave-core/v/stable)](https://packagist.org/packages/cleaniquecoders/leave-core) [![Total Downloads](https://poser.pugx.org/cleaniquecoders/leave-core/downloads)](https://packagist.org/packages/cleaniquecoders/leave-core) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cleaniquecoders/leave-core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/cleaniquecoders/leave-core/?branch=master) [![License](https://poser.pugx.org/cleaniquecoders/leave-core/license)](https://packagist.org/packages/cleaniquecoders/leave-core)
 
 # Leave
 
@@ -9,12 +9,12 @@
 ## Installation
 
 ```
-$ composer require cleaniquecoders/leave
+$ composer require cleaniquecoders/leave-core
 ```
 
 ## Usage
 
-`cleaniquecoders/leave` provide interfaces for you to implement based on your system workflow.
+`cleaniquecoders/leave-core` provide interfaces for you to implement based on your system workflow.
 
 Following are the interfaces available for developers to use:
 
