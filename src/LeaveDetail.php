@@ -31,7 +31,7 @@ class LeaveDetail implements DateContract, DayContract, DateRangeContract, Detai
      *
      * @var array
      */
-    protected $leave_dates;
+    protected $leave_dates = [];
 
     public function __construct(string $title, string $purpose)
     {
