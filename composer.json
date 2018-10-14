@@ -1,0 +1,34 @@
+{
+    "name": "cleaniquecoders/leave",
+    "description": "Provide core classes for Leave module in Human Resource Management System.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nasrul Hazim",
+            "email": "nasrulhazim.m@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.1",
+        "phpunit/phpunit": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "CleaniqueCoders\\Leave\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CleaniqueCoders\\Leave\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
