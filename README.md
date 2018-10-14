@@ -14,23 +14,43 @@ $ composer require cleaniquecoders/leave-core
 
 ## Usage
 
-`cleaniquecoders/leave-core` provide interfaces for you to implement based on your system workflow.
+`cleaniquecoders/leave-core` provide contracts(interfaces) for you to implement based on your system workflow.
 
-Following are the interfaces available for developers to use:
+Following are the contracts available for developers to use:
 
 ```php
+<?php
 
-// This is the main contract
+// add leave detail and list of leave details
 use CleaniqueCoders\Leave\Contracts\Leave;
 
-// This is for Date
+// get the title, purpose of the leave application
+use CleaniqueCoders\Leave\Contracts\Detail;
+
+// add leave date, list of leave dates and number of days of leave
 use CleaniqueCoders\Leave\Contracts\Date;
 
-// This is for Date Format
-use CleaniqueCoders\Leave\Contracts\DateFormat;
-
-// This is for Date Range
+// add all dates based on date range given
 use CleaniqueCoders\Leave\Contracts\DateRange;
+
+// check is weekend / weekday, get weekend days
+use CleaniqueCoders\Leave\Contracts\Day;
+```
+
+For approval and rejection of leave applications, so far concrete implementation still in progress, but the base contracts already provided:
+
+```php
+<?php
+
+// Handle isApproved, approvedBy, approvedAt and approvedRemark
+use CleaniqueCoders\Leave\Contracts\Approval;
+// Use this contract to user, staff, employee, supervisor
+use CleaniqueCoders\Leave\Contracts\Approver;
+
+// Handle isRejected, rejectedBy, rejectedAt and rejectedRemark
+use CleaniqueCoders\Leave\Contracts\Rejection;
+// Use this contract to user, staff, employee, supervisor
+use CleaniqueCoders\Leave\Contracts\Rejector;
 ```
 
 ## Test
