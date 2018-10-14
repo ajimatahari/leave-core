@@ -1,5 +1,5 @@
 {
-    "name": "cleaniquecoders/leave",
+    "name": "cleaniquecoders/leave-core",
     "description": "Provide core classes for Leave module in Human Resource Management System.",
     "type": "library",
     "authors": [
