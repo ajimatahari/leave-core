@@ -4,13 +4,13 @@ namespace CleaniqueCoders\Leave\Tests;
 
 class LeaveDetailTest extends TestCase
 {
-	private $leave_detail;
-	public function setUp()
-	{
-		parent::setUp();
-		$this->leave_detail = new \CleaniqueCoders\Leave\LeaveDetail('Leave Application Title', 'Purpose of The Leave Application');
+    private $leave_detail;
 
-	}
+    public function setUp()
+    {
+        parent::setUp();
+        $this->leave_detail = new \CleaniqueCoders\Leave\LeaveDetail('Leave Application Title', 'Purpose of The Leave Application');
+    }
 
     /** @test */
     public function it_has_leave_detail_file()
@@ -27,10 +27,10 @@ class LeaveDetailTest extends TestCase
     /** @test */
     public function it_instance_of_leave_detail()
     {
-    	$this->assertInstanceOf(
-    		\CleaniqueCoders\Leave\LeaveDetail::class,
-    		$this->leave_detail
-    	);
+        $this->assertInstanceOf(
+            \CleaniqueCoders\Leave\LeaveDetail::class,
+            $this->leave_detail
+        );
     }
 
     /** @test */
