@@ -2,7 +2,6 @@
 
 namespace CleaniqueCoders\Leave\Concerns;
 
-use CleaniqueCoders\Leave\Contracts\Day;
 use DateTime;
 
 trait Day

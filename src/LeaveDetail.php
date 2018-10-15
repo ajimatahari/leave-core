@@ -3,14 +3,15 @@
 namespace CleaniqueCoders\Leave;
 
 use CleaniqueCoders\Leave\Concerns\Day;
+use CleaniqueCoders\Leave\Concerns\Type;
 use CleaniqueCoders\Leave\Contracts\Date as DateContract;
 use CleaniqueCoders\Leave\Contracts\DateRange as DateRangeContract;
 use CleaniqueCoders\Leave\Contracts\Detail as DetailContract;
 use DateTime;
 
-class LeaveDetail implements DateContract, DayContract, DateRangeContract, DetailContract
+class LeaveDetail implements DetailContract
 {
-    use Day;
+    use Day, Type;
 
     /**
      * Title of the Leave Application.
@@ -95,7 +96,7 @@ class LeaveDetail implements DateContract, DayContract, DateRangeContract, Detai
      *
      * @return \CleaniqueCoders\Leave\Contracts\Date
      */
-    public function addLeaveDate(DateTime $datetime)
+    public function addLeaveDate(DateTime $datetime): DateContract
     {
         $this->leave_dates[] = $datetime;
 
@@ -127,7 +128,7 @@ class LeaveDetail implements DateContract, DayContract, DateRangeContract, Detai
      *
      * @return \CleaniqueCoders\Leave\Contracts\DateRange
      */
-    public function addDateRange(DateTime $startDateTime, DateTime $endDateTime, bool $skip_weekend = true)
+    public function addDateRange(DateTime $startDateTime, DateTime $endDateTime, bool $skip_weekend = true): DateRangeContract
     {
         $period = new \DatePeriod(
              $startDateTime,
